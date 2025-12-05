@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Greeting Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Mood-Based Greeting Generator ✨</h1>
+        
+        <div class="input-section">
+            <label for="userName">Enter Your Name:</label>
+            <input type="text" id="userName" placeholder="What's your name?">
+            
+            <label for="userMood">How Are You Feeling Today?</label>
+            <select id="userMood">
+                <option value="">Select your mood</option>
+                <option value="happy">😊 Happy</option>
+                <option value="sad">😢 Sad</option>
+                <option value="excited">🤩 Excited</option>
+                <option value="tired">😴 Tired</option>
+                <option value="neutral">😐 Neutral</option>
+            </select>
+            
+            <button id="generateBtn">Generate Greeting</button>
+        </div>
+        
+        <div class="greeting-container">
+            <div id="greetingMessage" class="greeting-message">
+                <!-- Dynamic greeting will appear here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
