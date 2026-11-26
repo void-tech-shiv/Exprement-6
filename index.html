@@ -1,39 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalized Greeting Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>✨ Mood-Based Greeting Generator ✨</h1>
-        
-        <div class="input-section">
-            <label for="userName">Enter Your Name:</label>
-            <input type="text" id="userName" placeholder="What's your name?">
-            
-            <label for="userMood">How Are You Feeling Today?</label>
-            <select id="userMood">
-                <option value="">Select your mood</option>
-                <option value="happy">😊 Happy</option>
-                <option value="sad">😢 Sad</option>
-                <option value="excited">🤩 Excited</option>
-                <option value="tired">😴 Tired</option>
-                <option value="neutral">😐 Neutral</option>
-            </select>
-            
-            <button id="generateBtn">Generate Greeting</button>
-        </div>
-        
-        <div class="greeting-container">
-            <div id="greetingMessage" class="greeting-message">
-                <!-- Dynamic greeting will appear here -->
-            </div>
-        </div>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="MoodWave is a local, mood-based greeting generator and JavaScript learning experiment."><meta name="theme-color" content="#101528"><title>MoodWave | Personalized Greeting Generator</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head>
+<body><a class="skip" href="#main">Skip to generator</a><header class="shell top"><a class="brand" href="#main">MOOD<span>WAVE.</span></a><span class="eyebrow">WEB EXPERIMENT 06</span></header>
+<main id="main" class="shell"><section class="intro"><p class="eyebrow">A LITTLE PERSONALIZATION</p><h1>Every mood.<br><span>A different hello.</span></h1><p>Choose how you're feeling and create a personalized greeting based on your device's local time.</p></section>
+<div class="layout"><section class="panel" aria-labelledby="form-title"><h2 id="form-title">Make it yours</h2><p>Five moods, four time periods and a selection of friendly messages.</p><form id="greeting-form" autocomplete="off"><fieldset id="fields" disabled><legend>Greeting preferences</legend><label for="userName">Your name or nickname</label><input id="userName" required maxlength="60" placeholder="Enter a nickname" aria-describedby="error"><label for="userMood">How are you feeling?</label><select id="userMood" required aria-describedby="error"><option value="">Select a mood</option><option value="happy">Happy</option><option value="sad">Sad</option><option value="excited">Excited</option><option value="tired">Tired</option><option value="neutral">Neutral</option></select><p id="error" class="error" role="alert"></p><div class="actions"><button id="generateBtn" type="submit">Generate greeting</button><button class="secondary" type="reset">Reset</button></div></fieldset><noscript><p>Enable JavaScript to generate a greeting.</p></noscript></form><p class="small">Your inputs stay on this page. No account, analytics or external AI service is used.</p></section>
+<section class="panel result" aria-labelledby="result-title"><p class="eyebrow">YOUR GREETING</p><h2 id="result-title">A moment for you</h2><div id="greetingMessage" class="greeting" data-mood="neutral" data-time="unknown" aria-live="polite" aria-atomic="true"><div class="orb" aria-hidden="true"></div><p id="context" class="context">READY TO GENERATE</p><h3 id="greeting-title">Hello there.</h3><p id="greeting-text">Your personalized greeting will appear here.</p></div><div class="actions"><button id="again" type="button" class="secondary" disabled>Another greeting</button><button id="copy" type="button" class="secondary" disabled>Copy greeting</button></div><p id="copy-status" role="status" class="small"></p></section></div>
+</main><footer class="shell bottom"><p>MoodWave · Rule-based JavaScript experiment, not a mental-health assessment.</p><a href="https://github.com/void-tech-shiv/Exprement-6">View source</a></footer></body></html>
